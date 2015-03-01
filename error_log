@@ -1,3 +1,0 @@
-[01-Mar-2015 20:57:56 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/bacancyt/public_html/btdemo/Memorygame/module/Application/src/Application/Controller/IndexController.php on line 35
-[01-Mar-2015 21:03:00 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in /home/bacancyt/public_html/btdemo/Memorygame/module/Application/view/application/index/index.phtml on line 19
-[01-Mar-2015 21:07:45 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 61603840 bytes) in /home/bacancyt/public_html/btdemo/Memorygame/module/Application/view/application/index/index.phtml on line 18
