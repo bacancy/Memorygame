@@ -1,0 +1,24 @@
+<?php
+/**
+* Rendering Images passed from Controller IndexController
+*/
+if(count($this->images)>0) {
+	echo '<div id="memory">';
+	for( $r=0; $r<$this->rows; $r++ ) {
+		echo '<ul>';
+		for( $c=0; $c<$this->cols; $c++ ) {
+			$i = $r*$this->cols+$c;
+			if( isset($this->images[$i]) )
+				echo '<li><div><img src="'.$this->basePath("img/".$this->images[$i].'.png').'"/></div></li>';
+		}
+		echo '</ul>';
+	}
+	echo 	'<br class="clear" />'
+			.'<p>Pairs found: <span id="s">0</span> of '.$this->numberOfImages.'</p>'
+					.'<p>Attempts: <span id="a">0</span></p>'
+							.'<p>Time elapsed: <span id="t">0</span></p>'
+									.'</div>';
+}
+
+
+?>
